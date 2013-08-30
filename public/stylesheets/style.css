@@ -1,0 +1,35 @@
+body {
+  padding-left: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+div {
+    float: left;
+    width: 33%;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+img {
+    display: none;
+}
+
+input[type=text] {
+    font-size: 3.4em;
+    text-align: center;
+}
+
+button {
+    font-size: 3.4em;
+}

@@ -1,0 +1,33 @@
+extends layout
+
+block content
+  h1= title
+
+  form(action=)
+    input(type='text', name='q', value=query)
+    button(type='submit') søk
+
+  div(class='results')
+    a(href=rgsi.url, target='_new')
+      img(src='images/logo_gsi.jpeg')
+    ul
+      - for (var i = 0; i < rgsi.data.length; ++i) {
+        li
+          a(href=rgsi.data[i].href, target='_new') !{rgsi.data[i].innerHTML}
+      - }
+  div(class='results')
+    a(href=r1881.url, target='_new')
+      img(src='images/logo_1881.png')
+    ul
+      - for (var i = 0; i < r1881.data.length; ++i) {
+        li
+          a(href=r1881.data[i].href, target='_new') !{r1881.data[i].innerHTML}
+      - }
+  div(class='results')
+    a(href=rgoogle.url, target='_new')
+      img(src='images/logo_google.png', href=rgoogle.url)
+    ul
+      - for (var i = 0; i < rgoogle.data.length; ++i) {
+        li
+          a(href=rgoogle.data[i].href, target='_new') !{rgoogle.data[i].innerHTML}
+      - }
